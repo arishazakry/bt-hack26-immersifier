@@ -172,4 +172,3 @@ Point out the **"Why this hint?"** button during the demo — judges evaluating 
 
 - **Backend**: Deploy to [Render](https://render.com) or [Railway](https://railway.app) (free tier available)
 - **Frontend**: Deploy to [Vercel](https://vercel.com) — set `REACT_APP_API_URL` env var to your backend URL
-# bt-hack26-immersifier

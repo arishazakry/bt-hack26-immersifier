@@ -1,0 +1,48 @@
+/* ── XR Learning Sandbox — Global Styles ────────────────────────────── */
+:root {
+  --bg:           #080c10;
+  --surface:      #0e1520;
+  --surface2:     #141d2b;
+  --border:       #1e2d42;
+  --accent:       #00e5ff;
+  --accent-dim:   #0097a7;
+  --success:      #00e676;
+  --warning:      #ffb300;
+  --danger:       #ff1744;
+  --text:         #e8f4f8;
+  --text-muted:   #607d8b;
+  --font-display: 'Syne', sans-serif;
+  --font-mono:    'Space Mono', monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body, #root {
+  width: 100%; height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-display);
+  overflow: hidden;
+}
+
+/* A-Frame canvas sits below React overlay */
+a-scene {
+  position: fixed !important;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 0;
+}
+
+/* React overlay always on top */
+#ui-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 10;
+  pointer-events: none; /* children opt back in */
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--surface); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
