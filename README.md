@@ -143,32 +143,9 @@ Flask Backend (port 5001)
 - **Adaptive hints**: The coach adjusts hint style based on how many mistakes the student has made (Socratic → procedural → direct).
 - **Transparent AI**: Every hint includes a "Why this hint?" explanation so students understand the coaching reasoning.
 
----
-
-## For the Hackathon Demo
-
-Run the experiment **twice**:
-
-**Run 1 — Correct path:**
-PPE → HCl → Phenolphthalein → Titrate slowly → Record
-
-**Run 2 — Wrong path (to show AI coach):**
-Skip PPE → try to fill with NaOH → skip indicator → over-titrate
-
-Point out the **"Why this hint?"** button during the demo — judges evaluating AI transparency will appreciate it.
-
----
-
 ## Environment Variables
 
 | Variable | Description |
 |----------|-------------|
 | `OPENAI_API_KEY` | Your OpenAI secret key |
 | `REACT_APP_API_URL` | Backend URL (default: http://localhost:5001) |
-
----
-
-## Deployment (post-hackathon)
-
-- **Backend**: Deploy to [Render](https://render.com) or [Railway](https://railway.app) (free tier available)
-- **Frontend**: Deploy to [Vercel](https://vercel.com) — set `REACT_APP_API_URL` env var to your backend URL
